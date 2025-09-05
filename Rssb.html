@@ -48,7 +48,7 @@
     </nav>
     <!-- End of Nav -->
      <!-- Links -->
-     <div class=" hidden lg:flex bg-[#242e8f] text-white py-7 px-10 mx-24 rounded-lg 2xl:mx-[250px] -mt-6">
+     <div id="fixed" class=" hidden lg:flex bg-[#242e8f] text-white py-7 px-10 mx-24 rounded-lg 2xl:mx-[250px] -mt-6">
         <div class="px-4 border-b-2 border-[#f8a51b] py-1 cursor-pointer">HOME</div>
         <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer">SCHEMES</div>
         <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer">INVESTMENT</div>
@@ -63,7 +63,7 @@
        <div class="z-20 mt-24">
         <div class="text-[#242e8f] font-thin text-2xl z-20">EJOHEZA <span class="font-bold text-[#f8a51b]">Save</span> for a better future for you and your family</div>
         <div class="text-sm text-[#242e8f] font-bold mt-2 z-20">EJOHEZA</div>
-        <div class="z-10"><button class="bg-[#242e8f] font-bold text-white px-13 py-4 rounded-lg mt-12 hover:bg-white hover:border-2 hover:border-[#242e8f] hover:text-[#242e8f] ">Learn More</button></div>
+        <div class="z-10"><button class="bg-[#242e8f] font-bold text-white px-13 py-4 rounded-lg mt-12 hover:bg-white border-2 border-[#242e8f] hover:text-[#242e8f] ">Learn More</button></div>
     </div>
     <div class="z-20 -mt-[200px] hidden lg:inline">
         <img src="Resources/public2.avif" alt="">
@@ -71,7 +71,7 @@
     </div>
     <!-- Members Section -->
      <div class=" flex  overflow-x-auto px-7 lg:justify-center lg:items-center  z-50 relative -top-19 ">
-        <div class="border-1 border-gray-200 min-w-[250px] max-w-[250px] px-8 pt-6 bg-white hover:animate-pazzo"><svg class=" text-[#242e8f] " xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+        <div class="border-1 border-gray-200 min-w-[250px] max-w-[250px] px-8 pt-6 bg-white hover:-translate-3"><svg class=" text-[#242e8f] " xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
         <div class="text-[#111a5e]  font-bold py-2 text-lg">Member First</div>
         <div class="text-sm text-gray-600 pb-6"><span class="text-[#242e8f] font-bold">13 Millions </span> of Rwandans are covered  by RSSB services</div>
         </div>
@@ -98,9 +98,10 @@ all <span class="text-[#242e8f]">Rwandans.</span></p>
     <div class="flex items-center justify-center mt-[100px]"> <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2"></i> <p class="text-lg font-bold text-[#242e8f]">
 SOCIAL PROTECTION SCHEMES</p></div>
  </div>
- <div class="px-7 pt-15  grid grid-rows-6 gap-6 sm:grid-rows-3 sm:grid-cols-2 ">
-    <div class="hover:bg-[url('Resources/1.webp')] bg-no-repeat bg-cover relative flex-center flex-col py-20 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 ">
-        <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/sack.svg" alt="">
+ <!-- Social Images grid -->
+ <div class="px-7 pt-15  grid grid-rows-6 gap-6 sm:grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 lg:px-[100px] 2xl:px-[300px]  ">
+    <div class="hover:bg-[url('Resources/1.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
+        <img class="w-17 group-hover:invert brightness-0 z-20 " src=" Resources/sack.svg" alt="">
         <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">PENSION SCHEME</div>
         <div class="text-gray-600 group-hover:text-white z-8">Retire With Dignity</div>
         <div class="absolute inset-0 hover:bg-blue-900/70 z-2"></div>
@@ -109,7 +110,7 @@ SOCIAL PROTECTION SCHEMES</p></div>
         <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
 
      </div>
-      <div class="hover:bg-[url('Resources/2.webp')] bg-no-repeat bg-cover relative flex-center flex-col py-20 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15">
+      <div class="hover:bg-[url('Resources/2.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15  lg:h-[300px] lg:py-7  ">
         <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/occupationa.svg" alt="">
         <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">OCCUPATIONAL HAZARD</div>
         <div class="text-gray-600 group-hover:text-white z-8">We Are Here for You</div>
@@ -119,7 +120,7 @@ SOCIAL PROTECTION SCHEMES</p></div>
         <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
 
      </div>
-     <div class="hover:bg-[url('Resources/3.webp')] bg-no-repeat bg-cover relative flex-center flex-col py-20 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15">
+     <div class="hover:bg-[url('Resources/3.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
         <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/medical.svg" alt="">
         <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">MEDICAL SCHEME</div>
         <div class="text-gray-600 group-hover:text-white z-8">Our Health, Our Future</div>
@@ -129,7 +130,7 @@ SOCIAL PROTECTION SCHEMES</p></div>
         <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
 
      </div>
-      <div class="hover:bg-[url('Resources/4.webp')] bg-no-repeat bg-cover relative flex-center flex-col py-20 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15">
+      <div class="hover:bg-[url('Resources/4.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
         <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/happy.svg" alt="">
         <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">CBHI SCHEME</div>
         <div class="text-gray-600 group-hover:text-white z-8">Giving You Happyness At the Best rate</div>
@@ -139,7 +140,7 @@ SOCIAL PROTECTION SCHEMES</p></div>
         <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
 
      </div>
-      <div class="hover:bg-[url('Resources/5.webp')] bg-no-repeat bg-cover relative flex-center flex-col py-20 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15">
+      <div class="hover:bg-[url('Resources/5.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
         <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/wallet.svg" alt="">
         <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">EJOHEZA</div>
         <div class="text-gray-600 group-hover:text-white z-8">Start Eary And Reap The Rewards</div>
@@ -149,7 +150,7 @@ SOCIAL PROTECTION SCHEMES</p></div>
         <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
 
      </div>
-      <div class="hover:bg-[url('Resources/6.webp')] bg-no-repeat bg-cover relative flex-center flex-col py-20 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 px-7">
+      <div class="hover:bg-[url('Resources/6.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 px-7 lg:h-[300px]">
         <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/maternity.svg" alt="">
         <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">MATERNITY LEAVE</div>
         <div class="text-gray-600 group-hover:text-white z-8 text-center">Enjoy Your Maternety Leave With A Full Salary</div>
@@ -160,8 +161,61 @@ SOCIAL PROTECTION SCHEMES</p></div>
 
      </div>
     </div>
-   
+    <!-- Never miss section -->
+     <div class="pl-7 lg:flex lg:px-[100px] lg:gap-15 lg:-mt-[200px] 2xl:pl-[250px] 2xl:gap-[100px] ">
+        <div class="lg:mt-24 2xl:flex-1 2xl:mt-[150px] lg:mb-24">
+            <div class="font-bold text-[#111a5e] text-3xl pt-10 pb-3 lg:text-4xl 2xl:pb-6">Never miss your contributions again</div>
+            <div class="text-gray-600 lg:pr-15 2xl: "><span class="text-[#f8a51b] font-bold text-lg ">Imisanzu</span> revolutionizes the way you manage your social security contributions. Access your information anytime, anywhere with ease and security. Enjoy convenience and transparency. Take control of your future and join Imisanzu today.</div>
+            <div class="z-10"><button class="bg-[#242e8f] font-bold text-white px-13 py-4 rounded-lg mt-9  hover:bg-white border-2 border-[#242e8f] hover:text-[#242e8f] ">Get Started</button></div>
+        </div>
+        <div class="pt-4 sm:pt-18 md:pt-22 2xl:flex-2  ">
+<img class="h-full w-full object-cover" src="Resources/Manzi.avif" alt="">
+        </div>
+     </div>
+   <!-- Digital Transformation -->
+    <div class="px-7 sm:px-[100px] 2xl:px-[250px] lg:px-[100px] lg:pr-[600px] 2xl:pr-[800px] ">
+        <div class="font-bold text-[#111a5e] text-3xl pt-10 pb-4">Digital transformation</div>
+        <div class="text-gray-600  text-2xl  "><p class="lg:line-clamp-3">A major focus for RSSB going into 2025 is to transform into a member first, <span class="text-[#f8a51b]  ">data driven</span>, high performing organization and a big part of that is to complete its <span class="text-[#f8a51b] ">shift to digital.</span> </div>
+</p>    </div>
+
+<div class="pl-7 sm:px-[100px] 2xl:px-[250px] lg:pl-[100px] lg:pr-7 lg:flex lg:gap-7">
     
+    <div>
+        <div class=" "><i class="fa-solid fa-chart-line text-2xl text-[#111a5e] p-4 bg-[#e7eef3] rounded-full m-6"></i></div><i class="fa-solid"></i>
+        <div class="font-bold text-[#111a5e] text-2xl pb-4">Changing from Legacy processes and systems</div>
+        <div class="text-gray-600 text-lg">We are moving away from the time-taking processes as we process large number of member's claims. Members and partners will be enjoying the benefits such as timely and faster responses and reimbursements for their claims by reducing the time taken for processes to be completed.</div>
+    </div>
+
+    
+<div>
+        <div><i class="fa-solid fa-file-circle-xmark text-2xl text-[#111a5e] p-4 bg-[#e7eef3] rounded-full m-6"></i></div>
+        <div class="font-bold text-[#111a5e] text-2xl pb-4">Non-paper based processes</div>
+        <div class="text-gray-600 text-lg">As we enter a new era of technology advances and data-driven business models, we are upgrading our systems and processes to gain in operational efficiency, address technology constraints, meet members experience expectations and support adoption and integration with other systems.</div>
+    </div>
+
+    <div>
+        <div class="text-2xl text-[#111a5e] m-4 p-6"><svg  xmlns="http://www.w3.org/2000/svg" class="  bg-[#e7eef3] rounded-full" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <div class="font-bold text-[#111a5e] text-2xl pb-4">Ensure the compliance rate in mandatory contributions</div>
+        <div class="text-gray-600 text-lg">Digital-led compliance for private and public institutions to ensure the compliance and fraud monitoring. Our members will have a seamless and transparent access of their contributions/benefits via intelligent systems and notification ecosystem.</div>
+    </div>
+    </div>
+    <!-- CEO SECTION -->
+     <div class="ml-7 border-l-3 border-[#f8a51b] p-7 mt-[150px] 2xl:mx-[250px] sm:mx-[100px] md:mr[150px] md:ml-[100px] lg:pr-[400px] 2xl:pr-[600px]">
+        <div class="text-xl leading-8 lg:text-2xl">“We have ambitious plans to transform RSSB, by 2025, into an organisation that is not just fully committed to delivering for our members but that puts members at the heart of all our planning and all our decision-making. Our vision is for RSSB to use all of its power and energy on behalf of our members: to be best-in-class in serving their interests, as a friend and source of help, as a modern, efficient organisation, with user-friendly, enabling technology; as a source of input to Government thinking; as a national and international thought-leader in social policy; as the leading strategic investor in our chosen markets; and as a prudent but ambitious business partner."</div>
+     <div class="flex gap-3">
+        <div> <img class="w-20 rounded-full" src="Resources/regis.webp" alt=""></div>
+        <div class="flex justify-center flex-col">
+            <p class="text-lg lg:text-2xl">Regis RUGEMANSHURO</p>
+            <p class="text-lg text-gray-500 lg:text-2xl">CEO, RSSB</p>
+        </div>
+     </div>
+    </div>
+    <!-- EVENT SECTION -->
+     <div class="flex items-center justify-center mt-[100px]"> <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2"></i> <p class="text-lg font-bold text-[#242e8f] uppercase">
+news & events</p></div>
+ </div>
     <script type="module" src="/src/main.js"></script>
+    <script></script>
+
 </body>
 </html>
