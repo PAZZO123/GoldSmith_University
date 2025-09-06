@@ -1,250 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Font Awesome Free -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Nav-Bar -->
-    <nav class="bg-yellow-">
-        <div class="bg-[#eff8fe] flex flex-col items-center lg:flex-row lg:justify-between lg:mx-24 lg:py-3 2xl:mx-[250px]" >
-        <div class="  text-[#242e8f] font-light"> <i class="fa-brands fa-linkedin-in border-r-1 border-gray-200 px-4 py-2 "></i>
-            <i class="fa-brands fa-twitter border-r-1 border-gray-200 px-4 py-2"></i>
-            <i class="fa-brands fa-facebook-f border-r-1 border-gray-200 px-4 py-2"></i>
-            <i class="fa-brands fa-youtube border-r-1 border-gray-200 px-4 py-2"></i>
-            <i class="fa-brands fa-square-instagram border-gray-200 px-4 py-2"></i>
-        </div>
-        
-        <div class="text-sm flex lg:flex-row-reverse"> 
-            <div class="border-r-1 border-gray-200 px-4 py-2">Publications</div>
-            <div class="px-4 py-2">Online Services <i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        </div>
-        <!-- Logo Division in Mobile -->
-        <div class="flex justify-between px-5 py-10 lg:mx-24 2xl:mx-[250px]">
-        <div><img class="w-[150px] lg:w-[200px]" src="Resources/image.webp" alt=""></div>
-        <div class="flex justify-center items-center lg:hidden"> <i class="fa-solid fa-bars  text-[#242e8f]  text-4xl "></i></div>
-        <div class=" hidden lg:flex ">
-            <div class="flex gap-3  border-r-1 border-gray-200 px-4">
-                <div class="text-2xl text-[#242e8f] "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg></div>
-                <div>
-                    <p class="font-bold text-[#242e8f]">4044</p>
-                    <p class="text-gray-500 text-sm"> Toll free lines</p>
-                </div>
-            </div>
-            <div class="flex gap-3 px-4">
-                <div class="text-2xl text-[#242e8f] "><i class="fa-regular fa-envelope"></i></div>
-                <div> 
-                    <p class="font-bold text-[#242e8f]">info@rssb.rw</p>
-                    <p class="text-gray-500 text-sm">Reach to us</p>
-                </div>
-            </div>
-        </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="m-0 p-0 box-border inset-0">
+    <!-- Nav  link and Logo -->
+    <nav class="">
+     <div class="flex justify-between px-6 pt-4 relative">
+      <div class="w-24 md:w-[200px] md:pt-4"> <img src="Images/logo.svg" alt=""></div>
+      <div class=" md:absolute  flex gap-6 md:gap-1  text-gray-700 font-extrabold md:bg-[#dbe3db] right-0 top-0 md:rounded-bl-full md:py-2 md:pl-10 md:hover:bg-[#333333] md:hover:text-white">
+      
+        <svg class="" xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap-icon lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+        <p class="hidden md:inline font-bold text-lg pr-9">Student, Staff and Alumini</p>
+        <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+      </div>
+     </div>
+     <!-- Navlinks -->
+     <div class="flex justify-evenly  font-bold text-gray-600 pt-8 pb-5 md:pb-0 sm:pl-6 md:justify-end md:gap-2  md:-mt-7 text-sm sm:text-base   ">
+       <div class=" md:hover:bg-[#333333] md:hover:text-white cursor-pointer md:px-4 md:py-3">Study</div>
+       <div class=" md:hover:bg-[#333333] md:hover:text-white cursor-pointer md:px-4 md:py-3">Course finder</div>
+       <div class=" md:hover:bg-[#333333] md:hover:text-white cursor-pointer md:px-4 md:py-3">International</div>
+       <div class="flex  md:hover:bg-[#333333] md:hover:text-white cursor-pointer md:px-4 md:py-3"><p>More</p> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></div>
+       <div class="hidden md:flex gap-2   md:hover:bg-[#333333] md:hover:text-white cursor-pointer pl-7 py-3 pr-19"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+      <div>Search</div>
+      </div>
+     </div>
     </nav>
-    <!-- End of Nav -->
-     <!-- Links -->
-     <div id="fixed" class=" hidden lg:flex bg-[#242e8f] text-white py-7 px-10 mx-24 rounded-lg 2xl:mx-[250px] -mt-6">
-        <div class="px-4 border-b-2 border-[#f8a51b] py-1 cursor-pointer">HOME</div>
-        <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer">SCHEMES</div>
-        <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer">INVESTMENT</div>
-        <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer">MANAGEMENT</div>
-        <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer">ABOUT</div>
-        <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer ">CAREERS</div>
-        <div class="px-4 py-1 hover:border-[#f8a51b] hover:border-b-2 cursor-pointer "><a class="hover:border-[#f8a51b] hover:border-b-2 cursor-pointer" href="">NEWS&EVENTS</a></div>
-     </div>
     <!-- Banner -->
-    <div class="bg-[url('/Resources/public1.avif')] bg-cover bg-right bg-no-repeat h-[600px] lg:h-[600px] 2xl:h-[600px] flex flex-col justify-center px-4 pt-24 2xl:pl-[250px]  relative lg:flex-row ">
-       <div class="absolute inset-0 bg-[#e0f0fa]/90 z-2"></div>
-       <div class="z-20 mt-24">
-        <div class="text-[#242e8f] font-thin text-2xl z-20">EJOHEZA <span class="font-bold text-[#f8a51b]">Save</span> for a better future for you and your family</div>
-        <div class="text-sm text-[#242e8f] font-bold mt-2 z-20">EJOHEZA</div>
-        <div class="z-10"><button class="bg-[#242e8f] font-bold text-white px-13 py-4 rounded-lg mt-12 hover:bg-white border-2 border-[#242e8f] hover:text-[#242e8f] ">Learn More</button></div>
+    <div class="bg-[url('Images/Clearing_mobile_2025.png')] md:bg-[url('Images/Clearing_desktop_2025-2.png')] bg-cover  w-full no-repeat ">
+      <div>
+        <!-- Banner Image -->
+        <div class="pl-10"><img class="hidden md:inline md:w-[200px] lg:w-[300px] 2xl:w-[600px]  2xl:pt-17 md:pt-5" src="Images/Clearing_text_desktop.svg" alt=""></div>
+        <div class="pl-10 "><img class=" md:hidden pt-7" src="Images/Clearing_text_mobile.svg" alt=""></div>
+       
+      </div>
+      <div class="flex flex-col justify-center space-y-2 items-center py-[50px] md:items-start md:pl-10 mt-[400px] md:mt-0 ">
+        <div class="bg-white px-5 py-2 border-3 rounded-2xl w-[300px] font-bold md:py-4">Apply now Through clearing</div>
+         <div class="bg-white px-5 py-2 border-3 rounded-2xl w-[300px] font-bold md:py-4">Learn more about clearing</div>
+      </div>
     </div>
-    <div class="z-20 -mt-[200px] hidden lg:inline">
-        <img src="Resources/public2.avif" alt="">
+    <!-- Responsive grid section -->
+    <div class="grid grid-cols-2 px-8 mt-10 gap-4 mx-auto sm:px-[100px]  md:px-[100px] md:gap-10 lg:px-[50px] lg:grid-cols-4 lg:gap-5 2xl:px-[150px] 2xl:gap-10 md:mt-0 md:mb-25">
+      <div class="hover:bg-gray-800 hover:text-white  pl-2 pb-2 pt-14  group md:items-center  md:px-20 2xl:px-22"> <div class="border-3  w-22 h-13 border-gray-600 group-hover:border-white  relative "><svg class=" absolute right-1 bottom-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></div>
+     <p class="pt-6 font-bold text-gray-700  group-hover:text-white  ">Search Our Courses</p></div>
+      <div class="hover:bg-gray-800 hover:text-white  pl-2 pb-2 pt-14  group md:px-20"><svg class="w-23 h-15 font-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-door-open-icon lucide-door-open"><path d="M11 20H2"/><path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z"/><path d="M11 4H8a2 2 0 0 0-2 2v14"/><path d="M14 12h.01"/><path d="M22 20h-3"/></svg>
+      <p class="pt-6 font-bold text-gray-700  group-hover:text-white">Open Days And Visits</p></div>
+      <div class="hover:bg-gray-800 hover:text-white  pl-2 pb-2 pt-14  group md:px-20"><svg class="w-23 h-15 font-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      <p class="pt-6 font-bold text-gray-700  group-hover:text-white">Accommodation options</p></div>
+      <div class="hover:bg-gray-800 hover:text-white  pl-2 pb-2 pt-14  group md:px-20"><svg class="w-23 h-15 font-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-more-icon lucide-message-square-more"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M12 11h.01"/><path d="M16 11h.01"/><path d="M8 11h.01"/></svg>
+      <p class="pt-6 font-bold text-gray-700  group-hover:text-white">Chat with our students</p></div>
     </div>
-    </div>
-    <!-- Members Section -->
-     <div class=" flex  overflow-x-auto px-7 lg:justify-center lg:items-center  z-50 relative -top-19 ">
-        <div class="border-1 border-gray-200 min-w-[250px] max-w-[250px] px-8 pt-6 bg-white hover:animate-pazzo"><svg class=" text-[#242e8f] " xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
-        <div class="text-[#111a5e]  font-bold py-2 text-lg">Member First</div>
-        <div class="text-sm text-gray-600 pb-6"><span class="text-[#242e8f] font-bold">13 Millions </span> of Rwandans are covered  by RSSB services</div>
-        </div>
-        <div class="border-1 border-gray-200 min-w-[250px] px-8 pt-6 max-w-[250px] bg-white hover:animate-pazzo"><i class="fa-solid fa-arrow-trend-up text-[#242e8f] text-5xl"></i>
-        <div class="text-[#111a5e]  font-bold py-2 ext-lg">Experience</div>
-        <div class="text-sm text-gray-600 pb-6" ><span class="text-[#242e8f] font-bold">60 years </span> of service for your safety and well-being</div>
-        </div>
-        <div class="border-1 border-gray-200  min-w-[250px] px-8 pt-4 max-w-[250px] bg-white hover:animate-pazzo"><svg class="text-[#242e8f]" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-        <div class="text-[#111a5e]  font-bold py-2 ext-lg">branches</div>
-        <div class="text-sm text-gray-600 pb-4">Our services decentralized in<span class="text-[#242e8f] font-bold">30 branches </span>  for your satisfaction</div></div>
-        <div class="border-1 border-gray-100  min-w-[250px] px-8 pt-4 max-w-[250px] bg-white hover:animate-pazzo"><svg class="text-[#242e8f]" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-list-icon lucide-clipboard-list"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
-       <div class="text-[#111a5e]  font-bold py-2 ext-lg">Data driven</div>
-        <div class="text-sm text-gray-600 pb-4">Learning from our data to improve the services offered to our members</div>
-        </div>
+    <!-- Application section --> 
+     <div class="bg-[#ffcd6e] flex flex-col pl-6  pt-6 space-y-7 mt-10  md:px-[130px] lg:flex-row lg:justify-between lg:px-0 lg:flex-1 lg:pl-7 lg:gap-10  lg:pt-0 2xl:pl-[300px] 2xl:gap-[200px]">
+      <div class="font-bold text-2xl lg:pt-10 mr-[50px] text-gray-900">
+        There are places available across a number of our halls. If you apply to Goldsmiths for 2025 entry, you will receive a guaranteed offer of accommodation.
+      </div>
+      <div class="lg:flex lg:justify-center lg:items-center" ><button class="bg-white border-1 shadow-2xl py-4 w-[150px]   text-center ">How to apply</button></div>
+      <div class="pl-6"> <img src="Images/Accommodation-homepage.jpg" alt=""></div>
      </div>
-<!-- Social Scheme -->
- <div>
-    <div class=" text-left 2xl:px-[350px] lg:px-[200px] lg:line-clamp-4 l:line-clamp-5 sm:text-center px-7">
-        <p class="text-4xl font-extrabold text-gray-700 ">Optimistic and forward-looking
-agent of central government, working to achieve</p>
-        <p class="text-4xl font-extrabold text-gray-700 md:text-[#242e8f]">the financial security and health of
-all <span class="text-[#242e8f]">Rwandans.</span></p>
-    </div>
-    <div class="flex items-center justify-center mt-[100px]"> <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2"></i> <p class="text-lg font-bold text-[#242e8f]">
-SOCIAL PROTECTION SCHEMES</p></div>
- </div>
- <!-- Social Images grid -->
- <div class="px-7 pt-15  grid grid-rows-6 gap-6 sm:grid-rows-3 sm:grid-cols-2 lg:grid-cols-3 lg:px-[100px] 2xl:px-[300px]  ">
-    <div class="hover:bg-[url('Resources/1.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
-        <img class="w-17 group-hover:invert brightness-0 z-20 " src=" Resources/sack.svg" alt="">
-        <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">PENSION SCHEME</div>
-        <div class="text-gray-600 group-hover:text-white z-8">Retire With Dignity</div>
-        <div class="absolute inset-0 hover:bg-blue-900/70 z-2"></div>
-     
-           <div class="pt-12 font-bold text-white z-9"> LEARN MORE</div>
-        <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
-
-     </div>
-      <div class="hover:bg-[url('Resources/2.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300 group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15  lg:h-[300px] lg:py-7  ">
-        <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/occupationa.svg" alt="">
-        <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">OCCUPATIONAL HAZARD</div>
-        <div class="text-gray-600 group-hover:text-white z-8">We Are Here for You</div>
-        <div class="absolute inset-0 hover:bg-blue-900/70 z-2"></div>
-     
-           <div class="pt-12 font-bold text-white z-9"> LEARN MORE</div>
-        <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
-
-     </div>
-     <div class="hover:bg-[url('Resources/3.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
-        <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/medical.svg" alt="">
-        <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">MEDICAL SCHEME</div>
-        <div class="text-gray-600 group-hover:text-white z-8">Our Health, Our Future</div>
-        <div class="absolute inset-0 hover:bg-blue-900/70 z-2"></div>
-     
-           <div class="pt-12 font-bold text-white z-9"> LEARN MORE</div>
-        <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
-
-     </div>
-      <div class="hover:bg-[url('Resources/4.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
-        <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/happy.svg" alt="">
-        <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">CBHI SCHEME</div>
-        <div class="text-gray-600 group-hover:text-white z-8">Giving You Happyness At the Best rate</div>
-        <div class="absolute inset-0 hover:bg-blue-900/70 z-2"></div>
-     
-           <div class="pt-12 font-bold text-white z-9"> LEARN MORE</div>
-        <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
-
-     </div>
-      <div class="hover:bg-[url('Resources/5.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 lg:h-[300px] lg:py-7 ">
-        <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/wallet.svg" alt="">
-        <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">EJOHEZA</div>
-        <div class="text-gray-600 group-hover:text-white z-8">Start Eary And Reap The Rewards</div>
-        <div class="absolute inset-0 hover:bg-blue-900/70 z-2"></div>
-     
-           <div class="pt-12 font-bold text-white z-9"> LEARN MORE</div>
-        <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
-
-     </div>
-      <div class="hover:bg-[url('Resources/6.webp')] bg-no-repeat bg-cover relative flex-center flex-col h-[320px] py-15 border-1 border-gray-300  group hover:text-white sm:py-7 sm:h-[250px] md:h-full md:py-15 px-7 lg:h-[300px]">
-        <img class="w-17 group-hover:invert brightness-0 z-20" src=" Resources/maternity.svg" alt="">
-        <div class="font-bold text-[#111a5e] pt-1 group-hover:text-[#f8a51b] z-10 ">MATERNITY LEAVE</div>
-        <div class="text-gray-600 group-hover:text-white z-8 text-center">Enjoy Your Maternety Leave With A Full Salary</div>
-        <div class="absolute inset-0 hover:bg-blue-900/70 z-2"></div>
-     
-           <div class="pt-12 font-bold text-white z-9"> LEARN MORE</div>
-        <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2 -mt-3 text-center invisible group-hover:visible z-11"></i>
-
-     </div>
-    </div>
-    <!-- Never miss section -->
-     <div class="pl-7 lg:flex lg:px-[100px] lg:gap-15 lg:-mt-[200px] 2xl:pl-[250px] 2xl:gap-[100px] ">
-        <div class="lg:mt-24 2xl:flex-1 2xl:mt-[150px] lg:mb-24">
-            <div class="font-bold text-[#111a5e] text-3xl pt-10 pb-3 lg:text-4xl 2xl:pb-6">Never miss your contributions again</div>
-            <div class="text-gray-600 lg:pr-15 2xl: "><span class="text-[#f8a51b] font-bold text-lg ">Imisanzu</span> revolutionizes the way you manage your social security contributions. Access your information anytime, anywhere with ease and security. Enjoy convenience and transparency. Take control of your future and join Imisanzu today.</div>
-            <div class="z-10"><button class="bg-[#242e8f] font-bold text-white px-13 py-4 rounded-lg mt-9  hover:bg-white border-2 border-[#242e8f] hover:text-[#242e8f] ">Get Started</button></div>
+     <!-- Open Days Section -->
+      <div class="mt-7 sm:px-[50px] md:px-[80px] lg:flex lg:flex-row-reverse lg:px-7 2xl:px-[250px] 2xl:mt-0" >
+        <div class="px-7 ">
+          <img src="Images/open-days-v3.jpg" alt="">
         </div>
-        <div class="pt-4 sm:pt-18 md:pt-22 2xl:flex-2  ">
-<img class="h-full w-full object-cover" src="Resources/Manzi.avif" alt="">
+        <div class="pl-7 pr-[100px]">
+          <div class="font-bold text-4xl text-gray-900 pt-18 pb-7">Open Days</div>
+          <div class="font-bold text-gray-700">Find out more about what makes life at Goldsmiths unique. Meet academics and have your questions answered. From campus tours to informative talks there’s lots to see and do.</div>
+          
+      <div class="flex justify-start items-center pt-7" ><button class="bg-[#ffcd6e] border-1 shadow-2xl py-4 w-[150px]   text-center ">Book your place</button></div>
         </div>
-     </div>
-   <!-- Digital Transformation -->
-    <div class="px-7 sm:px-[100px] 2xl:px-[250px] lg:px-[100px] lg:pr-[600px] 2xl:pr-[800px] ">
-        <div class="font-bold text-[#111a5e] text-3xl pt-10 pb-4">Digital transformation</div>
-        <div class="text-gray-600  text-2xl  "><p class="lg:line-clamp-3">A major focus for RSSB going into 2025 is to transform into a member first, <span class="text-[#f8a51b]  ">data driven</span>, high performing organization and a big part of that is to complete its <span class="text-[#f8a51b] ">shift to digital.</span> </div>
-</p>    </div>
+      </div>
+      <!-- Who we are Section -->
+       <div class="sm:px-[50px] md:px-[100px] mt-[80px] lg:flex lg:px-7 2xl:px-[250px]">
+        <div class=" lg:w-5/11 lg:grow-0">
+          <div class="font-bold text-4xl text-gray-900 pt-18 pb-7 px-7">Who we are</div>
+          <div class="font-bold text-gray-700 px-7">We offer a space for self-discovery, delivering world-leading research and progressive teaching from our single-site campus in the heart of South East London.</div>
+          <!-- Links  -->
+          <div class="flex space-x-10 pt-7 pl-7 ">
+            <!-- Left Links -->
+       <div class="text-[#3f63c8] flex flex-col space-y-6 font-bold  ">
+        <a class="hover:text-[#ac3525]" href="">About Goldsmiths</a>
+        <a class="hover:text-[#ac3525]" href="">Courses</a>
+        <a class="hover:text-[#ac3525]" href="">Services for business</a>
+        <a class="hover:text-[#ac3525]" href="">Local community</a>
+       </div>
+       <!-- Right Links -->
+        <div class="text-[#3f63c8]  flex flex-col space-y-6 font-bold pt-14 ">
+        <a class="hover:text-[#ac3525]"  href="">Researchs</a>
+        <a class="hover:text-[#ac3525]" href="">Events</a>
+         <a class="hover:text-[#ac3525]" href="">Goldsmiths center for  contermporary Arts</a>
+        </div> 
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="bg-[#98a4d4] mt-7 sm:mx-7 lg:w-6/11 lg:grow-0">
+        <div class=" "><img class="w-full object-cover object-center" src="Images/who-we-are-two-students-studying.jpg" alt=""></div>
+        
+        <div class="font-bold text-lg pl-7 pr-14 pt-8">80% of our undergraduate students move on to highly-skilled work after their studies.
+          </div>
+          <div class="pl-7 pb-10">Graduate Outcomes Survey</div>
+       </div>
+       </div>
+       <!-- Grid Template Section 2 -->
+         <div class="font-bold text-4xl text-gray-900 pt-18 pb-7 pl-7 sm:px-[50px] md:px-[100px] lg:px-7 2xl:px-[250px]">Goldsmiths life</div>
+        <div class="grid grid-rows-3 gap-4 px-7 relative sm:px-[50px] md:px-[100px] lg:grid-cols-7 lg:px-7 2xl:px-[250px] w-full  ">
+         
+          <div class="bg-[url('Images/walking-past-ben-pimlott-800.jpg')] bg-center bg-no-repeat bg-cover relative lg:order-1 lg:col-span-4 ">
+            <div class="bg-white mr-15 left-0 bottom-0 pr-8 pt-3 absolute mt-[200px] lg:w-[300px]">
+              <h1 class="font-bold text-3xl text-gray-900 pb-3">Virtual tour</h1>
+              <p class="pb-2">Explore the Goldsmiths campus via 360-degree images and ‘Day in the Life’ experiences.</p>
+            </div>
+          </div>
+          <div class="bg-[url('Images/bookshop-home-770x325.jpg')] bg-center bg-no-repeat bg-cover lg:order-3 lg:col-span-4  ">
+            <div class="bg-white mr-15 mt-[200px] pr-8 pt-3 lg:w-[300px] ">
+              <h1 class="font-bold text-3xl text-gray-900 ">Local Area</h1>
+              <p>Get to know buzzing South East London through our area guides.</p>
+              
+            </div>
+          </div>
+          
+          
+          <div class=" bg-[url('Images/accommodation-810.jpg')] bg-center bg-no-repeat bg-cover relative lg:order-2 lg:row-span-2 lg:col-span-3 ">
+            <div class="bg-white mr-15 left-0 bottom-0 pr-8 pt-3 absolute mt-[200px] lg:w-[300px]">
+              <h1 class="font-bold text-3xl text-gray-900 pb-3">Accommodation</h1>
+              <p class="pb-2">Learn more about the range of accommodation choices available.</p>
+            </div>
+        </div>
+        </div>
+        <!-- Highlight Section -->
+           <div class="font-bold text-4xl text-gray-900  pb-10 pl-7 sm:px-[50px] md:px-[100px] lg:px-7 2xl:px-[250px] lg:-mt-[120px] mt-[100px] ">Highlights</div>
+           <div class="flex  sm:px-[50px] md:px-[100px] md:gap-7 lg:px-7 2xl:px-[250px]">
+              <div class="text-bold  flex justify-center items-center lg:hidden"><svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></div>
+            <div class="bg-black text-white flex-1"><img src="Images/Sylvie-Carlos-1.jpg" alt="">
+                <div class="font-bold p-4">Graduate receives Fulbright Award for work on Black British media experience</div></div>
+            <div class="text-bold flex justify-center items-center lg:hidden "> <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg></div>
+            <div class="bg-black text-white hidden lg:block flex-1"><img src="Images/Nicola-Searle-Hong-Kong-Law-Dept.jpeg" alt="">
+                <div class="font-bold p-4">Q&amp;A: Dr Nicola Searle on economic espionage in the research community</div></div>
+                <div class="bg-black text-white hidden lg:block flex-1"><img src="Images/VCs-Art-Prize_Web_George-Wigley_001.jpg" alt="">
+                <div class="font-bold p-4">Vice Chancellor's Art Prize awarded to six standout postgradse</div></div>
+                <div class="bg-black text-white hidden lg:block flex-1"><img src="Images/dave-adamson-YE7D_kwm2VU-unsplash-(1).jpg" alt="">
+                <div class="font-bold p-4">Ethnic minority youth see online racist content at least once a week</div></div>
+           </div>
+           
+           <!-- Footer Section -->
 
-<div class="pl-7 sm:px-[100px] 2xl:px-[250px] lg:pl-[100px] lg:pr-7 lg:flex lg:gap-7">
-    
-    <div>
-        <div class=" "><i class="fa-solid fa-chart-line text-2xl text-[#111a5e] p-4 bg-[#e7eef3] rounded-full m-6"></i></div><i class="fa-solid"></i>
-        <div class="font-bold text-[#111a5e] text-2xl pb-4">Changing from Legacy processes and systems</div>
-        <div class="text-gray-600 text-lg">We are moving away from the time-taking processes as we process large number of member's claims. Members and partners will be enjoying the benefits such as timely and faster responses and reimbursements for their claims by reducing the time taken for processes to be completed.</div>
-    </div>
-
-    
-<div>
-        <div><i class="fa-solid fa-file-circle-xmark text-2xl text-[#111a5e] p-4 bg-[#e7eef3] rounded-full m-6"></i></div>
-        <div class="font-bold text-[#111a5e] text-2xl pb-4">Non-paper based processes</div>
-        <div class="text-gray-600 text-lg">As we enter a new era of technology advances and data-driven business models, we are upgrading our systems and processes to gain in operational efficiency, address technology constraints, meet members experience expectations and support adoption and integration with other systems.</div>
-    </div>
-
-    <div>
-        <div class="text-2xl text-[#111a5e] m-4 p-6"><svg  xmlns="http://www.w3.org/2000/svg" class="  bg-[#e7eef3] rounded-full" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <div class="font-bold text-[#111a5e] text-2xl pb-4">Ensure the compliance rate in mandatory contributions</div>
-        <div class="text-gray-600 text-lg">Digital-led compliance for private and public institutions to ensure the compliance and fraud monitoring. Our members will have a seamless and transparent access of their contributions/benefits via intelligent systems and notification ecosystem.</div>
-    </div>
-    </div>
-    <!-- CEO SECTION -->
-     <div class="ml-7 border-l-3 border-[#f8a51b] p-7 mt-[150px] 2xl:mx-[250px] sm:mx-[100px] md:mr[150px] md:ml-[100px] lg:pr-[400px] 2xl:pr-[600px]">
-        <div class="text-xl leading-8 lg:text-2xl">“We have ambitious plans to transform RSSB, by 2025, into an organisation that is not just fully committed to delivering for our members but that puts members at the heart of all our planning and all our decision-making. Our vision is for RSSB to use all of its power and energy on behalf of our members: to be best-in-class in serving their interests, as a friend and source of help, as a modern, efficient organisation, with user-friendly, enabling technology; as a source of input to Government thinking; as a national and international thought-leader in social policy; as the leading strategic investor in our chosen markets; and as a prudent but ambitious business partner."</div>
-     <div class="flex gap-3">
-        <div> <img class="w-20 rounded-full" src="Resources/regis.webp" alt=""></div>
-        <div class="flex justify-center flex-col">
-            <p class="text-lg lg:text-2xl">Regis RUGEMANSHURO</p>
-            <p class="text-lg text-gray-500 lg:text-2xl">CEO, RSSB</p>
+      <div class="bg-[#333333] text-white  px-6 sm:px-15 py-10 mt-23 md:px-[150px] lg:px-9 2xl:pl-[250px]">
+        <div class="lg:flex lg:justify-between  " >
+          <div class="flex justify-between font-bold lg:flex-4 text-sm sm:text-base">
+        <div >
+      <div class="hover:text-yellow-600" >About us</div>
+      <div class="hover:text-yellow-600" >Contact us</div>
+      <div class="hover:text-yellow-600" >Find us</div>
+      <div class="hover:text-yellow-600" >Jobs</div>
+      
         </div>
-     </div>
-    </div>
-    <!-- EVENT SECTION -->
-     <div class="flex items-center justify-center mt-[100px]"> <i class="fa-solid fa-minus text-4xl text-[#f8a51b] pr-2"></i> <p class="text-lg font-bold text-[#242e8f] uppercase">
-news & events</p></div>
- </div>
-    <!-- Event Images -->
-     <div class="px-7 mt-15 sm:px-[100px] 2xl:px-[250px] lg:pl-[100px] lg:pr-7 lg:flex lg:gap-7">
-        <div class="mt-3">
-            <div><img src="Resources/event1.webp" alt=""></div>
-            <div class="text-gray-700 py-5 cursor-pointer">9 Months ago</div>
-            <div class="text-xl font-bold text-[#111a5e] pb-4 ">RSSB Engages the Private Sector on Pension Reforms and  ...</div>
-            <div class="text-gray-800">Kigali: Thursday, November 28th, 2024 – The Rwanda Social Security Board (RSSB) engaged with the private sector to discuss upcoming pension reforms, h...</div>
-            <div class="text-[#242e8f] pt-10 ">Read more ...</div>
+        <div class="pl-15">
+          <div><a class="hover:text-yellow-600"  href="">Accessibility statement</a></div>
+          <div><a class="hover:text-yellow-600"  href="">Cookie use</a></div>
+          <div><a class="hover:text-yellow-600"  href="">Copyright and disclaimer</a></div>
+          <div><a class="hover:text-yellow-600"  href="">Slavery and human trafficking statement</a></div>
+         
         </div>
-
-         <div class="mt-3">
-            <div><img class="h-[250px] md:h-[300px] lg:h-[200px] 2xl:h-[300px]" src="Resources/event2.webp" alt=""></div>
-            <div class="text-gray-700 py-5 cursor-pointer">2 Years ago</div>
-            <div class="text-xl font-bold text-[#111a5e] pb-4 ">RSSB champions youth basketball in EjoHeza Tournament ...</div>
-            <div class="text-gray-800">On 14th January 2014, Rwanda Social Security Board (RSSB) participated in the 3x3 EjoHeza Tournament, collaboratively organized by partner basketball ...</div>
-            <div class="text-[#242e8f] pt-10 ">Read more ...</div>
+      </div>
+      <div class="lg:flex-2 lg:pl-[200px] lg:-mt-[45px]"><div class="pt-2">___</div>
+      <div class="font-bold text-gray-300"><a class="hover:text-yellow-600"  href="">Admin Login</a></div></div>
+      <div class="flex justify-between lg:flex-col lg:flex-2">
+        <div class="flex gap-3 pt-7">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+      </div>
+       <div class="text-sm text-gray-300  lg:pt-20 "><a  class="hover:text-yellow-600" href="">Back to top</a></div>
+      </div>
         </div>
-
-         <div class="mt-3">
-            <div><img src="Resources/event3.webp" alt=""></div>
-            <div class="text-gray-700 py-5 cursor-pointer">2 Years ago</div>
-            <div class="text-xl font-bold text-[#111a5e] pb-4 ">RSSB gets data controller certification  ...</div>
-            <div class="text-gray-800">The National Cyber Security Authority (NCSA) presented Rwanda Social Security Board (RSSB) with Data Controller certification, following the instituti...</div>
-            <div class="text-[#242e8f] pt-10 pb-3">Read more ...</div>
-        </div>
-     </div>
-     <!-- Button Section -->
-       <div class="z-10 py-15 flex-center"><button class="hover:bg-[#242e8f] font-bold hover:text-white px-13 py-4 rounded-lg mt-9  bg-white border-2 border-[#242e8f] text-[#242e8f] ">View More</button></div>
-        </div>
+      
+      <div class="text-gray-300 text-sm lg:-mt-7 pt-7">© 2025 Goldsmiths, University of London</div>
+      </div>
     <script type="module" src="/src/main.js"></script>
-    <script></script>
-
-</body>
+    
+  </body>
 </html>
+
+
