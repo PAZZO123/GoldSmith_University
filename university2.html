@@ -12,12 +12,25 @@
         <!-- Drop down Header -->
         <div class="bg-[#212529] text-white flex py-1 justify-between lg:px-10 xl:px-24 2xl:px-[200px]">
             <div class="flex gap-7">
-                <label for="">
-                    <input type="checkbox" name="" id="" class="peer hidden">
-                    <span class="text-sm font-semibold">About The university</span>
-                   <i class="fa-solid fa-caret-down text-sm text-gray-400"></i>
-                </label>
-                <label for="">
+        <label class="relative inline-block cursor-pointer">
+            <input type="checkbox" class="peer hidden" />
+            
+            
+                <span class="text-sm font-semibold">About The University</span>
+                <i class="fa-solid fa-caret-down text-sm text-gray-400 transition-transform peer-checked:rotate-180"></i>
+          
+            <!-- Dropdown -->
+            <div class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-md p-2 peer-checked:block text-gray-600">
+                <div class="p-1 hover:bg-gray-100 cursor-pointer">The Faculties</div>
+                <div class="p-1 hover:bg-gray-100 cursor-pointer">Mission and Values</div>
+                <div class="p-1 hover:bg-gray-100 cursor-pointer">History</div>
+                <div class="p-1 hover:bg-gray-100 cursor-pointer">Fact and Figures</div>
+                <div class="p-1 hover:bg-gray-100 cursor-pointer">U.Porto in the Ranking</div>
+                <div class="p-1 hover:bg-gray-100 cursor-pointer">Awards and Accolades</div>
+                <div class="p-1 hover:bg-gray-100 cursor-pointer">Quality and Accreditation</div>
+            </div>
+        </label>
+                            <label for="">
                     <input type="checkbox" name="" id="" class="peer hidden">
                     <span class="text-sm font-semibold">Faculties</span>
                     <i class="fa-solid fa-caret-down text-gray-400"></i>
