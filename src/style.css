@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --animate-pazzo: pazzo 4s ease-in-out infinite;
+  --animate-pazzo: pazzo 4s ease-in-out;
   @keyframes pazzo {
     0%,
     100% {
