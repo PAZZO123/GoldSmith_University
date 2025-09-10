@@ -10,9 +10,9 @@
 <body>
     <nav>
         <!-- Drop down Header -->
-        <div class="bg-[#212529] text-white flex py-1 justify-between lg:px-10 xl:px-24 2xl:px-[200px]">
+        <div class="hidden  bg-[#212529] text-white lg:flex  justify-between lg:px-10 xl:px-24 2xl:px-[200px]">
             <div class="flex gap-7">
-        <label class="relative inline-block cursor-pointer">
+        <label class="relative inline-block cursor-pointer p-1 hover:bg-gray-700">
             <input type="checkbox" class="peer hidden" />
             
             
@@ -20,23 +20,36 @@
                 <i class="fa-solid fa-caret-down text-sm text-gray-400 transition-transform peer-checked:rotate-180"></i>
           
             <!-- Dropdown -->
-            <div class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-md p-2 peer-checked:block text-gray-600">
-                <div class="p-1 hover:bg-gray-100 cursor-pointer">The Faculties</div>
-                <div class="p-1 hover:bg-gray-100 cursor-pointer">Mission and Values</div>
-                <div class="p-1 hover:bg-gray-100 cursor-pointer">History</div>
-                <div class="p-1 hover:bg-gray-100 cursor-pointer">Fact and Figures</div>
-                <div class="p-1 hover:bg-gray-100 cursor-pointer">U.Porto in the Ranking</div>
-                <div class="p-1 hover:bg-gray-100 cursor-pointer">Awards and Accolades</div>
-                <div class="p-1 hover:bg-gray-100 cursor-pointer">Quality and Accreditation</div>
+            <div class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-md p-2 peer-checked:block text-gray-600 z-101">
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">The Faculties</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Mission and Values</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">History</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Fact and Figures</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">U.Porto in the Ranking</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Awards and Accolades</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Quality and Accreditation</div>
             </div>
         </label>
-                            <label for="">
-                    <input type="checkbox" name="" id="" class="peer hidden">
-                    <span class="text-sm font-semibold">Faculties</span>
-                    <i class="fa-solid fa-caret-down text-gray-400"></i>
-                </label>
+                     <label class="relative inline-block cursor-pointer hover:bg-gray-700 p-1">
+            <input type="checkbox" class="peer hidden" />
+            
+            
+                <span class="text-sm font-semibold ">Faculties</span>
+                <i class="fa-solid fa-caret-down text-sm text-gray-400 transition-transform peer-checked:rotate-180"></i>
+          
+            <!-- Dropdown Faculity -->
+            <div class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-md p-2 peer-checked:block text-gray-600 z-100">
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Faculties of CSE</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Faculties of CE</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Faculties of CE</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Faculties of CS</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Faculties of IT</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Faculties of ME</div>
+                <div class="p-1 hover:bg-gray-300 cursor-pointer">Faculties of IS</div>
             </div>
-           <div class="flex gap-10">
+        </label>
+            </div>
+           <div class="flex gap-10  py-1 ">
                    <div class="  text-white font-light space-x-4 text-sm">
                     <i class="fa-solid fa-newspaper"></i>
                      <i class="fa-brands fa-instagram"></i>
@@ -45,16 +58,186 @@
                       <i class="fa-brands fa-x-twitter"></i>
                       <i class="fa-brands fa-facebook-f  "></i>
                       </div>
-              <div class="flex gap-4">
-            <p>PT</p>
+              <div class="flex gap-4 -mt-1 font-bold">
+            <p class="text-gray-600 hover:text-white">PT</p>
             <p>EN</p>
-           </div>
-           
-           
+           </div>  
         </div>
-          
         </div>
+        <!-- Mobile Nav -->
+         <div class="bg-[#D5D5D5] flex  p-4 lg:justify-between  xl:px-24 2xl:px-[200px]">
+          <label class="lg:hidden">
+  <!-- hidden checkbox, still works as peer -->
+  <input type="checkbox" class="peer hidden">
+  <img src="portoAssets/cross.svg" alt="" class="inline w-10 pt-1.5 pr-4">
+</label>
+
+<div class="flex gap-3">
+  <div class="bg-[#212529] text-4xl text-[#D5D5D5] py-0.5 px-1.5 font-[Lato] font-normal w-fit h-fit">
+    U.
+  </div>
+  <div class="leading-4 pt-1.5">
+    UNIVERSDADE <br> DO PORTO
+  </div>
+</div>
+
+<label class="ml-auto lg:hidden">
+  
+  <input type="checkbox" class="peer hidden">
+  <img src="portoAssets/smaller.svg" alt="" class="w-10 pt-1.5">
+</label>
+
+<div class="hidden lg:flex  font-bold gap-3 pt-1.5">
+    <div>STUDY</div>
+    <div>RESEARCH</div>
+    <div>INNOVATE</div>
+    <div>LIVE</div>
+    <div>EXPLORE</div>
+    <div class="flex gap-9 border-b-1 p-0 h-fit font-light ml-3 ">Search    <i class="fa-solid fa-magnifying-glass"></i></div>
+</div>
+         </div>
     </nav>
+    <!-- Banner -->
+     <div class="bg-[url('portoAssets/banner.jpg')] bg-cover bg-no-repeat bg-center relative">
+     
+<div class="flex justify-between py-[80px] lg:py-[250px]">
+    <div class="bg-[#A18A4D] text-lg text-white p-2 w-fit"><i class="fa-solid fa-chevron-left"></i></div>
+    <div class="bg-[#A18A4D] text-lg text-white p-2 w-fit"><i class="fa-solid fa-chevron-right"></i></div>
+</div>
+<div class="bg-[#212529]/90 text-gray-300 pt-3 font-bold px-3 text-lg pb-15 lg:absolute left-20 bottom-24 lg:w-[400px] lg:pb-4 xl:left-[200px]  xl:w-[450px]">
+    <div class="pb-3 lg:text-2xl lg:pb-1" >University Commited to Gender Equality</div>
+    <div class="hidden lg:inline font-normal text-base">Everything you need to know to apply to the University of Porto through the National Call for Applications to Higher Education 2025/2026.</div>
+   <div> <button class="bg-[#A18A4D] font-bold py-0.5 px-2 w-fit text-black lg:mt-3">See More</button></div>
+</div>
+     </div>
+     <!-- Study -->
+      <div class="px-5 xl:px-24 2xl:px-[200px] pt-20">
+        <div class=" text-[#A18A4D] text-5xl font-light ">Study</div>
+        <div class="xl:flex lg:gap-[130px]">
+            <div class="font-bold text-3xl py-7 flex-1">Your future is here!</div>
+            <div class="text-lg text-gray-600 flex-2 xl:pt-7">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</div>
+        </div>
+      </div>
+      <!-- Courses -->
+       <div class="px-5 pt-20 text-xl lg:flex lg:flex-row gap-10 xl:px-24 2xl:px-[200px]">
+        <div class="flex-3" >
+            <div class="text-2xl font-bold pb-7 lg:pb-4 ">Which Course Are You Looking For?</div>
+            <div class="flex justify-between border-2 py-3 px-4"><div>All</div>
+         <i class="fa-solid fa-caret-down text-sm text-gray-900 "></i> </div>
+         <input type="text" name="" id="" placeholder="Please Enter the course keyword..." class="py-3 placeholder:text-gray-600 border-2 w-full my-5 px-4">
+         <input type="submit" value="Search" class="py-3 border-2 w-full bg-[#A18A4D] font-bold text-gray-100 border-[#A18A4D] cursor-pointer text-2xl hover:bg-white hover:text-[#A18A4D]" >
+        </div>
+        <div class="text-2xl flex-2 lg:pt-8">
+            <div>Courses from A to Z:</div>
+          <div class="text-[#A18A4D] underline lg:leading-11">  Bachelor's and Integrated Master’s Degrees <br> Master’s Degrees <br> Doctorates</div>
+        </div>
+       </div>
+       <!-- News Section -->
+        <div class="pl-5 pt-17 xl:px-24 2xl:px-[200px]">
+            <div class=" text-[#A18A4D] text-5xl font-light pb-6">News</div>
+            <div class="flex gap-2 font-bold text-xl pb-10 "> <div class="text-[#A18A4D]">All news</div>
+                <div class="bg-[#A18A4D] text-lg text-white px-1.5 w-fit rounded-full h-fit"><i class="fa-solid fa-chevron-right text-sm"></i> </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <div class="text-sm text-[#A18A4D] pl-5">Compus e Communidade</div>
+                    <div class="text-2xl font-bold pl-5">Tu és U.Porto: Novos estudantes recebidos no coração da cidade</div>
+                    <div class="pt-24 text-gray-500 pl-5">09 September 2025</div>
+                    <img src="portoAssets/new1.jpg" alt="" class="pr-15 md:pr-5">
+                </div>
+                
+                <div class="hidden md:inline">
+                    <div class="text-sm text-[#A18A4D] pl-5">Compus e Communidade</div>
+                    <div class="text-2xl font-bold pl-5">Tu és U.Porto: Novos estudantes recebidos no coração da cidade</div>
+                    <div class="pt-24 text-gray-500 pl-5 ">09 September 2025</div>
+                    <img src="portoAssets/new2.jpg" alt="" class="pr-7">
+                </div>
+                 <div class="hidden lg:inline">
+                    <div class="text-sm text-[#A18A4D] pl-5">Compus e Communidade</div>
+                    <div class="text-2xl font-bold pl-5">Tu és U.Porto: Novos estudantes recebidos no coração da cidade</div>
+                    <div class="pt-24 text-gray-500 pl-5 ">09 September 2025</div>
+                    <img src="portoAssets/new3.jpg" alt="" class="pr-7">
+                </div>
+                   <div class="hidden 2xl:inline">
+                    <div class="text-sm text-[#A18A4D] pl-5">Compus e Communidade</div>
+                    <div class="text-2xl font-bold pl-5">Tu és U.Porto: Novos estudantes recebidos no coração da cidade</div>
+                    <div class="pt-24 text-gray-500 pl-5 ">09 September 2025</div>
+                    <img src="portoAssets/new4.jpeg" alt="" class="pr-7">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2 xl:px-24 2xl:px-[200px] pl-5 pt-10 ">
+    <div class="bg-[#999999] text-lg text-white py-2  px-4 w-fit"><i class="fa-solid fa-chevron-left text-sm"></i></div>
+    <div class="bg-[#A18A4D] text-lg text-white py-2 px-4 w-fit"><i class="fa-solid fa-chevron-right text-sm"></i></div>
+</div>
+<!-- We are a University of Excellence! -->
+ <div class=" xl:px-24 2xl:px-[200px] pl-5 pt-10 lg:flex gap-[200px] xl:gap-[50px]">
+     <div class=" text-[#A18A4D] text-5xl font-light pb-6 flex-2">We are a University of Excellence!</div>
+     <div class="flex-3">
+        <div class="font-semibold text-xl pb-4"><span class="font-light">With over 100 years of history, the University of Porto is a</span> leading teaching and scientific research institution in Portugal and worldwide.</div>
+        <div class="font-light text-xl">Considered  <span class="font-semibold"> the best Portuguese University and one of the best 100 European institution</span>according to the most important Higher Education rankings, U.Porto combines quality teaching and excellent research with the best academic experience.</div>
+        <div class="text-xl pt-10">We are waiting for you!</div>
+        <div class="flex gap-2 font-semibold text-xl pt-6 "> <div class="text-[#A18A4D]">See more</div>
+                <div class="bg-[#A18A4D] text-lg text-white px-1.5 w-fit rounded-full h-fit"><i class="fa-solid fa-chevron-right text-sm"></i> </div>
+            </div>
+     </div>
+ </div>
+ <!-- Research Section -->
+  <div class="pt-[200px] px-5 lg:flex xl:px-24 2xl:px-[200px]">
+    <div >
+        <div class=" text-[#A18A4D] text-5xl font-light pb-6 flex-2">Research</div>
+    <div class="font-semibold text-3xl pb-6">Research University</div>
+    <div class="text-xl font-light pb-4">With <span class="text-[#A18A4D]">48 research units</span> and a highly qualified scientific community, the University of Porto <span class="font-semibold">is one of the largest producers of science in Portugal,</span> contributing to almost <span class="text-[#A18A4D]">25% of all national scientific output.</span></div>
+    <div class="text-xl font-light">The excellence of our scientific ecosystem is particularly evident in the <span class="text-[#A18A4D]">leading position the University occupies in the main international rankings of Higher Education.</span></div>
+    </div>
+    <div class="lg:mt-20">
+        <img src="portoAssets/research.jpg" alt="">
+    </div>
+  </div>
+  <!-- Porto In Figures -->
+   <div class="bg-[#A18A4D] py-15 mt-10 xl:px-24 2xl:px-[200px] px-5">
+    <div class="border-b-1 border-white text-center  ">
+       <div class="flex">
+        <div class="invisible flex-1 -mx-7 sm:mx-0"><img src="portoAssets/micro.svg" alt=""></div>
+        <div class="flex justify-between flex-1 ">
+        <img class="invert brightness-0 w-[120px]" src="portoAssets/micro.svg" alt="">
+          <div class="flex gap-2 font-semibold text-xl pt-6 "> <div class="text-white text-sm">Learn more</div>
+                <div class="text-[#A18A4D] text-lg bg-white px-1.5 w-fit rounded-full h-fit"><i class="fa-solid fa-chevron-right text-sm"></i> </div>
+            </div>
+       </div>
+       </div> 
+       <div class="uppercase text-4xl font-bold text-white pt-8">U.Porto in Figures</div>
+       <div class="text-3xl text-white font-thin pb-8">2022/2023</div>
+    </div>
+    <div class="text-white flex flex-col justify-center text-center gap-8 pt-6 lg:flex-row lg:justify-evenly">
+       <div>
+    <h1 class="text-3xl font-bold">+300</h1>
+    <p class="text-3xl font-thin ">Courses</p>
+       </div> 
+       <div>
+        <h1 class="text-3xl font-bold">+35.000</h1>
+        <p class="text-3xl font-thin ">Students enrolled</p>
+       </div>
+       <div>
+        <h1 class="text-3xl font-bold">48</h1>
+        <p class="text-3xl font-thin">Research Units</p>
+       </div>
+    </div>
+   </div>
+   <!-- Frequently Asked Questions -->
+    <div class="mt-10 xl:px-24 2xl:px-[200px] px-5">
+        <div class=" text-[#A18A4D] text-5xl font-light pb-6 flex-2">Frequently asked questions</div>
+         <div class="flex justify-between border-2 py-3 px-4 lg:hidden"><div>U.Porto Students</div>
+         <i class="fa-solid fa-caret-down text-sm text-gray-900 "></i> </div>
+   
+    <div class="hidden lg:flex gap-10 text-lg font-semibold text-gray-600 border-b-1 border-gray-500">
+        <div class="border-black text-black border-b-1">U.Porto Students</div>
+<div class="hover:border-b-1 border-black hover:text-black cursor-pointer">International Students</div>
+<div class="hover:border-b-1 border-black hover:text-black cursor-pointer">Prospective Students</div>
+<div class="hover:border-b-1 border-black hover:text-black cursor-pointer">Professionals</div>
+<div class="hover:border-b-1 border-black hover:text-black cursor-pointer">Alumni</div>
+    </div>
+     </div>
      <script type="module" src="/src/main.js"></script>
 </body>
 </html>
